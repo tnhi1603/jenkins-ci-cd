@@ -4,6 +4,8 @@ WORKDIR /flask_app
 
 COPY requirements.txt .
 
+RUN pip install --upgrade flask
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN pip install pytest
